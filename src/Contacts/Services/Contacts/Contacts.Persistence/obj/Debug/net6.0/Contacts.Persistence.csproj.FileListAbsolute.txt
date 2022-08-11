@@ -10,3 +10,8 @@ C:\Users\secevit\source\repos\assessment-backend-net\src\Contacts\Services\Conta
 C:\Users\secevit\source\repos\assessment-backend-net\src\Contacts\Services\Contacts\Contacts.Persistence\obj\Debug\net6.0\refint\Contacts.Persistence.dll
 C:\Users\secevit\source\repos\assessment-backend-net\src\Contacts\Services\Contacts\Contacts.Persistence\obj\Debug\net6.0\Contacts.Persistence.pdb
 C:\Users\secevit\source\repos\assessment-backend-net\src\Contacts\Services\Contacts\Contacts.Persistence\obj\Debug\net6.0\ref\Contacts.Persistence.dll
+C:\Users\secevit\source\repos\assessment-backend-net\src\Contacts\Services\Contacts\Contacts.Persistence\bin\Debug\net6.0\Contacts.Application.dll
+C:\Users\secevit\source\repos\assessment-backend-net\src\Contacts\Services\Contacts\Contacts.Persistence\bin\Debug\net6.0\Contacts.Domain.dll
+C:\Users\secevit\source\repos\assessment-backend-net\src\Contacts\Services\Contacts\Contacts.Persistence\bin\Debug\net6.0\Contacts.Application.pdb
+C:\Users\secevit\source\repos\assessment-backend-net\src\Contacts\Services\Contacts\Contacts.Persistence\bin\Debug\net6.0\Contacts.Domain.pdb
+C:\Users\secevit\source\repos\assessment-backend-net\src\Contacts\Services\Contacts\Contacts.Persistence\obj\Debug\net6.0\Contacts.Persistence.csproj.CopyComplete

@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "mJR01J7/AvJc31Y1JMNrNL3C6udXEVszKvA9Q7FIhK2fhkZnlrAI4w5GVkS70soUltXGFXmYdusAaec8VmF79w==",
+  "dgSpecHash": "zIxyWgDbQ3XdCQBdWIhec4P+8r95y3pieSxPU9WjbSKYM4UwV2UsuM09XVKqAmwfLSVCM9YUKc+caU8vcYgYvw==",
   "success": true,
   "projectFilePath": "C:\\Users\\secevit\\source\\repos\\assessment-backend-net\\src\\Contacts\\Services\\Contacts\\Contacts.Application\\Contacts.Application.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\secevit\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\secevit\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\secevit\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\10.0.1\\mediatr.extensions.microsoft.dependencyinjection.10.0.1.nupkg.sha512",
     "C:\\Users\\secevit\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.8\\microsoft.entityframeworkcore.6.0.8.nupkg.sha512",
     "C:\\Users\\secevit\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.8\\microsoft.entityframeworkcore.abstractions.6.0.8.nupkg.sha512",
     "C:\\Users\\secevit\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.8\\microsoft.entityframeworkcore.analyzers.6.0.8.nupkg.sha512",

@@ -1,18 +1,14 @@
 ﻿using Contacts.Application.Dto;
+using Contacts.Application.Dto.Command;
 using Contacts.Application.Interfaces.UnitOfWork;
 using Contacts.Domain.Entities;
 using MediatR;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore.Storage;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Contacts.Persistence.CQRS.Handlers.Request
+namespace Contacts.Persistence.CQRS.Handlers.Command
 {
-    public class CreateContactCommandHandler : IRequestHandler<ContactDto, ContactResponse>
+    public class CreateContactCommandHandler : IRequestHandler<CreateContactDto, HandlerResponse<Contact>>
     {
         private readonly IUnitOfWork _unitOfWork;
         public CreateContactCommandHandler(IUnitOfWork unitOfWork)
@@ -20,9 +16,9 @@ namespace Contacts.Persistence.CQRS.Handlers.Request
             _unitOfWork = unitOfWork;
         }
 
-        public async Task<ContactResponse> Handle(ContactDto createContactDto, CancellationToken cancellationToken)
+        public async Task<HandlerResponse<Contact>> Handle(CreateContactDto createContactDto, CancellationToken cancellationToken)
         {
-            ContactResponse createContactResponse = new ContactResponse();
+            HandlerResponse<Contact> createContactResponse = new HandlerResponse<Contact>();
             EntityEntry<Contact> result = null;
             using IDbContextTransaction retVal = await _unitOfWork.BeginTansactionAsync();
             try
@@ -41,7 +37,9 @@ namespace Contacts.Persistence.CQRS.Handlers.Request
                 await retVal.RollbackAsync();
             }
 
-            createContactResponse.ContactDto = new ContactDto()
+            createContactResponse.Message = createContactResponse.IsSuccess ? "Success" : "Unsuccess";
+
+            createContactResponse.Data = new Contact()
             {
                 Name = result?.Entity.Name ?? string.Empty,
                 Lastname = result?.Entity.Lastname ?? string.Empty,
@@ -51,6 +49,4 @@ namespace Contacts.Persistence.CQRS.Handlers.Request
             return createContactResponse;
         }
     }
-
-
 }

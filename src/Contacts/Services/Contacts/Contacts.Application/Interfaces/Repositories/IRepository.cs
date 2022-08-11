@@ -11,7 +11,7 @@ namespace Contacts.Application.Interfaces.Repositories
     public interface IRepository<T> where T : class, IBaseEntity, new()
     {
         Task<List<T>> GetAsync();
-        Task<T> GetByIdAsync(string id);
+        Task<T> GetByIdAsync(int id);
         Task<EntityEntry<T>> Add(T entity);
         Task<EntityEntry<T>> Update(T entity);
         Task<EntityEntry<T>> Delete(T entity);

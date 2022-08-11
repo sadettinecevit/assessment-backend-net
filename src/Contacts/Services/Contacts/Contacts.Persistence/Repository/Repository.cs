@@ -44,6 +44,6 @@ namespace Contacts.Persistence.Repository
 
         public async Task<List<T>> GetAsync() => await Table.ToListAsync();
 
-        public async Task<T> GetByIdAsync(string id) => await Table.FindAsync(id);
+        public async Task<T> GetByIdAsync(int id) => await Table.FindAsync(id);
     }
 }

@@ -1,0 +1,12 @@
+C:\Users\secevit\source\repos\assessment-backend-net\src\Contacts\Services\Report\Report.Application\bin\Debug\net6.0\Report.Application.deps.json
+C:\Users\secevit\source\repos\assessment-backend-net\src\Contacts\Services\Report\Report.Application\bin\Debug\net6.0\Report.Application.dll
+C:\Users\secevit\source\repos\assessment-backend-net\src\Contacts\Services\Report\Report.Application\bin\Debug\net6.0\Report.Application.pdb
+C:\Users\secevit\source\repos\assessment-backend-net\src\Contacts\Services\Report\Report.Application\obj\Debug\net6.0\Report.Application.csproj.AssemblyReference.cache
+C:\Users\secevit\source\repos\assessment-backend-net\src\Contacts\Services\Report\Report.Application\obj\Debug\net6.0\Report.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\secevit\source\repos\assessment-backend-net\src\Contacts\Services\Report\Report.Application\obj\Debug\net6.0\Report.Application.AssemblyInfoInputs.cache
+C:\Users\secevit\source\repos\assessment-backend-net\src\Contacts\Services\Report\Report.Application\obj\Debug\net6.0\Report.Application.AssemblyInfo.cs
+C:\Users\secevit\source\repos\assessment-backend-net\src\Contacts\Services\Report\Report.Application\obj\Debug\net6.0\Report.Application.csproj.CoreCompileInputs.cache
+C:\Users\secevit\source\repos\assessment-backend-net\src\Contacts\Services\Report\Report.Application\obj\Debug\net6.0\Report.Application.dll
+C:\Users\secevit\source\repos\assessment-backend-net\src\Contacts\Services\Report\Report.Application\obj\Debug\net6.0\refint\Report.Application.dll
+C:\Users\secevit\source\repos\assessment-backend-net\src\Contacts\Services\Report\Report.Application\obj\Debug\net6.0\Report.Application.pdb
+C:\Users\secevit\source\repos\assessment-backend-net\src\Contacts\Services\Report\Report.Application\obj\Debug\net6.0\ref\Report.Application.dll

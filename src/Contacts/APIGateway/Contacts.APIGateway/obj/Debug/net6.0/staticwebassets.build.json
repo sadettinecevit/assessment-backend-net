@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "ZWZiVAAmjxjWK2zkwtTnwWLoDv1iZZP4ipxxCloXOX4=",
+  "Source": "Contacts.APIGateway",
+  "BasePath": "_content/Contacts.APIGateway",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

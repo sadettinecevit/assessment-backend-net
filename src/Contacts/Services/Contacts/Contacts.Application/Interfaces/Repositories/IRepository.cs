@@ -12,8 +12,9 @@ namespace Contacts.Application.Interfaces.Repositories
     {
         Task<List<T>> GetAsync();
         Task<T> GetByIdAsync(int id);
-        Task<EntityEntry<T>> Add(T entity);
-        Task<EntityEntry<T>> Update(T entity);
-        Task<EntityEntry<T>> Delete(T entity);
+        Task<T> Add(T entity);
+        Task<T> Update(T entity);
+        Task<T> Delete(T entity);
+        Task<int> SaveChanges();
     }
 }

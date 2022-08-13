@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "VtuUPOsLhB/8jmEENbBLaS5FtCMtSH4xLkYoXScghGgeoVp5RV9GDe2bSURvHWwex/CBFeMusMtb8ShCAYsJFw==",
+  "dgSpecHash": "tnFNMTBT0o6cNXmy7Ps9JMOnY7T9/21VwdBCtjC9mcfBalXRXb2iU+mcLrKZnMxok17rQKlFpsRouAekAkEbNw==",
   "success": true,
   "projectFilePath": "C:\\Users\\secevit\\source\\repos\\assessment-backend-net\\src\\Contacts\\Services\\Contacts\\Contacts.Infrastructure\\Contacts.Infrastructure.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\secevit\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\secevit\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\secevit\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\secevit\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

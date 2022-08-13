@@ -24,6 +24,8 @@ namespace Contacts.Persistence.Context
         {
             base.OnModelCreating(modelBuilder);
 
+            //modelBuilder.Entity<ContactInfo>().HasOne(p=>p.Contact).WithMany().IsRequired();
+            //modelBuilder.Entity<ContactInfo>().HasOne(p=>p.InfoType).WithMany().IsRequired();
         }
     }
 }

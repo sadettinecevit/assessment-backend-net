@@ -1,19 +1,23 @@
 ﻿using Contacts.Application.Dto;
 using Contacts.Application.Dto.Command;
+using Contacts.Application.Interfaces.Repositories;
 using Contacts.Application.Interfaces.UnitOfWork;
 using Contacts.Domain.Entities;
 using MediatR;
 
 namespace Contacts.Persistence.CQRS.Handlers.Query
 {
-    public class GetContactDtoHandler : BaseHandler, IRequestHandler<GetContactDto, HandlerResponse<List<GetByIdContactResponseDto>>>
+    public class GetContactDtoHandler : IRequestHandler<GetContactDto, HandlerResponse<List<GetByIdContactResponseDto>>>
     {
-        public GetContactDtoHandler(IUnitOfWork unitOfWork) : base(unitOfWork)
+        private readonly IContactRepository _repository;
+        public GetContactDtoHandler(IContactRepository repository)
         {
+            _repository = repository;
         }
         public async Task<HandlerResponse<List<GetByIdContactResponseDto>>> Handle(GetContactDto request, CancellationToken cancellationToken)
         {
-            List<Contact> contacts = await _unitOfWork.ContactRepository.GetAsync();
+            int skip = (request.PageIndex - 1) * request.DataCount;
+            List<Contact> contacts = _repository.GetAsync().Result.Skip(skip).Take(request.DataCount).ToList();
 
             HandlerResponse<List<GetByIdContactResponseDto>> handlerResponse = new HandlerResponse<List<GetByIdContactResponseDto>>();
             handlerResponse.IsSuccess = contacts != null;

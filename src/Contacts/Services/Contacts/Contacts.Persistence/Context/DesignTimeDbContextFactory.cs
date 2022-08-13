@@ -12,7 +12,7 @@ namespace Contacts.Persistence.Context
         {
             DbContextOptionsBuilder<TContext> builder = new DbContextOptionsBuilder<TContext>();
             IConfiguration configuration = new ConfigurationBuilder()
-                .SetBasePath(Path.Combine(Directory.GetCurrentDirectory(), "../../Presentation/SocialNetwork.WebAPI"))
+                .SetBasePath(Path.Combine(Directory.GetCurrentDirectory(), "../Contacts.WebAPI"))
                 .AddJsonFile("appsettings.json")
                 .Build();
 

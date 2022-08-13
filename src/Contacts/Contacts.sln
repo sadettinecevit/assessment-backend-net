@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "APIGateway", "APIGateway", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{1ABBA140-0560-4FD9-9A00-EB7A747B7522}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contacts.APIGateway", "APIGateway\Contacts.APIGateway\Contacts.APIGateway.csproj", "{68478BB4-B4A7-456E-BD18-3F06E9066F17}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contacts.APIGateway", "APIGateway\Contacts.APIGateway\Contacts.APIGateway.csproj", "{68478BB4-B4A7-456E-BD18-3F06E9066F17}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{80145A29-7107-4A01-9986-A7433114A4B1}"
 EndProject
@@ -25,29 +25,43 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{4AABBD8F-14DC-4B45-BE1A-E2E09F197964}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contacts.Domain", "Services\Contacts\Contacts.Domain\Contacts.Domain.csproj", "{5752445D-D8A0-4146-A34A-EAD18B6C0753}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contacts.Domain", "Services\Contacts\Contacts.Domain\Contacts.Domain.csproj", "{5752445D-D8A0-4146-A34A-EAD18B6C0753}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contacts.Infrastructure", "Services\Contacts\Contacts.Infrastructure\Contacts.Infrastructure.csproj", "{B745162C-C026-4037-8114-BF4232608E14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contacts.Infrastructure", "Services\Contacts\Contacts.Infrastructure\Contacts.Infrastructure.csproj", "{B745162C-C026-4037-8114-BF4232608E14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contacts.Application", "Services\Contacts\Contacts.Application\Contacts.Application.csproj", "{1FA1B70B-ECBC-4814-866B-E15C8D7B6FF0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contacts.Application", "Services\Contacts\Contacts.Application\Contacts.Application.csproj", "{1FA1B70B-ECBC-4814-866B-E15C8D7B6FF0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contacts.Persistence", "Services\Contacts\Contacts.Persistence\Contacts.Persistence.csproj", "{BFA55575-B87F-436B-BCEF-133EA5D96927}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contacts.Persistence", "Services\Contacts\Contacts.Persistence\Contacts.Persistence.csproj", "{BFA55575-B87F-436B-BCEF-133EA5D96927}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contacts.WebAPI", "Services\Contacts\Contacts.WebAPI\Contacts.WebAPI.csproj", "{B810C2EE-C631-4008-AE66-E59B2A5EA7DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contacts.WebAPI", "Services\Contacts\Contacts.WebAPI\Contacts.WebAPI.csproj", "{B810C2EE-C631-4008-AE66-E59B2A5EA7DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Report.Domain", "Services\Report\Report.Domain\Report.Domain.csproj", "{402628DE-8B0C-4D10-AF5B-AF68FD947D14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Report.Domain", "Services\Report\Report.Domain\Report.Domain.csproj", "{402628DE-8B0C-4D10-AF5B-AF68FD947D14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Report.Application", "Services\Report\Report.Application\Report.Application.csproj", "{7FC7C846-C023-4CF6-A7A5-73ADB11A509D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Report.Application", "Services\Report\Report.Application\Report.Application.csproj", "{7FC7C846-C023-4CF6-A7A5-73ADB11A509D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Report.Infrastructure", "Services\Report\Report.Infrastructure\Report.Infrastructure.csproj", "{3560B566-2110-4BAD-ABDC-54E66A0D9B41}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Report.Infrastructure", "Services\Report\Report.Infrastructure\Report.Infrastructure.csproj", "{3560B566-2110-4BAD-ABDC-54E66A0D9B41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Report.Persistence", "Services\Report\Report.Persistence\Report.Persistence.csproj", "{B860720C-9CFD-4674-945A-BBB78B22367C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Report.Persistence", "Services\Report\Report.Persistence\Report.Persistence.csproj", "{B860720C-9CFD-4674-945A-BBB78B22367C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Report.WebAPI", "Services\Report\Report.WebAPI\Report.WebAPI.csproj", "{3CA9DF59-2E09-4F09-AE1B-28C7082A46C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Report.WebAPI", "Services\Report\Report.WebAPI\Report.WebAPI.csproj", "{3CA9DF59-2E09-4F09-AE1B-28C7082A46C2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkerProcess", "WorkerProcess", "{727DEDCF-DC76-49CF-BF03-B62546810742}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkerProcess.ReportService", "Services\WorkerProcess\WorkerProcess.ReportService\WorkerProcess.ReportService.csproj", "{ED867BE1-1E5B-4A1C-8F28-E840883241EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkerProcess.ReportService", "Services\WorkerProcess\WorkerProcess.ReportService\WorkerProcess.ReportService.csproj", "{ED867BE1-1E5B-4A1C-8F28-E840883241EB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{63831562-25E5-47CE-ADC7-A932C0061B4F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IntegrationTests", "IntegrationTests", "{98A493D1-17CC-4128-8A5B-3AA66654376A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{DE90CB41-4FE4-44B8-8E4F-F3660DB0C1D2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Handlers", "Handlers", "{5564EAC7-C18A-422D-9C9B-0667ABED34BD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Command", "Command", "{BEEDEDE3-EA13-43CB-AD07-BCFCE144D991}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Query", "Query", "{6D463D81-EFEE-4C40-8F86-437FC96A24B8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contacts.Test.HandlerTest", "Contacts.Test.HandlerTest\Contacts.Test.HandlerTest.csproj", "{FE5119FE-6E19-4E54-A542-FBCC0C24FE73}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -103,6 +117,10 @@ Global
 		{ED867BE1-1E5B-4A1C-8F28-E840883241EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED867BE1-1E5B-4A1C-8F28-E840883241EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED867BE1-1E5B-4A1C-8F28-E840883241EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE5119FE-6E19-4E54-A542-FBCC0C24FE73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE5119FE-6E19-4E54-A542-FBCC0C24FE73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE5119FE-6E19-4E54-A542-FBCC0C24FE73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE5119FE-6E19-4E54-A542-FBCC0C24FE73}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -129,6 +147,13 @@ Global
 		{3CA9DF59-2E09-4F09-AE1B-28C7082A46C2} = {1DD08268-4BA5-4561-B23D-AD59812D685E}
 		{727DEDCF-DC76-49CF-BF03-B62546810742} = {1ABBA140-0560-4FD9-9A00-EB7A747B7522}
 		{ED867BE1-1E5B-4A1C-8F28-E840883241EB} = {727DEDCF-DC76-49CF-BF03-B62546810742}
+		{63831562-25E5-47CE-ADC7-A932C0061B4F} = {58F1C43A-3748-446C-B0FD-B1254C888542}
+		{98A493D1-17CC-4128-8A5B-3AA66654376A} = {63831562-25E5-47CE-ADC7-A932C0061B4F}
+		{DE90CB41-4FE4-44B8-8E4F-F3660DB0C1D2} = {63831562-25E5-47CE-ADC7-A932C0061B4F}
+		{5564EAC7-C18A-422D-9C9B-0667ABED34BD} = {DE90CB41-4FE4-44B8-8E4F-F3660DB0C1D2}
+		{BEEDEDE3-EA13-43CB-AD07-BCFCE144D991} = {5564EAC7-C18A-422D-9C9B-0667ABED34BD}
+		{6D463D81-EFEE-4C40-8F86-437FC96A24B8} = {5564EAC7-C18A-422D-9C9B-0667ABED34BD}
+		{FE5119FE-6E19-4E54-A542-FBCC0C24FE73} = {BEEDEDE3-EA13-43CB-AD07-BCFCE144D991}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F6FA38B0-74ED-4562-96C2-D9EE59664057}

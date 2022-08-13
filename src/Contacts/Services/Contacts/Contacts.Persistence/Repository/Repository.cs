@@ -21,23 +21,23 @@ namespace Contacts.Persistence.Repository
 
         private DbSet<T> Table { get => _context.Set<T>(); }
 
-        public virtual async Task<EntityEntry<T>> Add(T entity)
+        public virtual async Task<T> Add(T entity)
         {
-            EntityEntry<T> result = await Table.AddAsync(entity);
+            T result = Table.AddAsync(entity).Result.Entity;
             var retVal = await _context.SaveChangesAsync();
             return result;
         }
 
-        public virtual async Task<EntityEntry<T>> Update(T entity)
+        public virtual async Task<T> Update(T entity)
         {
-            EntityEntry<T> result = Table.Update(entity);
+            T result = Table.Update(entity).Entity;
             await _context.SaveChangesAsync();
             return result;
         }
 
-        public virtual async Task<EntityEntry<T>> Delete(T entity)
+        public virtual async Task<T> Delete(T entity)
         {
-            EntityEntry<T> result = Table.Remove(entity);
+            T result = Table.Remove(entity).Entity;
             await _context.SaveChangesAsync();
             return result;
         }
@@ -45,5 +45,10 @@ namespace Contacts.Persistence.Repository
         public async Task<List<T>> GetAsync() => await Table.ToListAsync();
 
         public async Task<T> GetByIdAsync(int id) => await Table.FindAsync(id);
+
+        public async Task<int> SaveChanges()
+        { 
+            return await _context.SaveChangesAsync(); 
+        }
     }
 }

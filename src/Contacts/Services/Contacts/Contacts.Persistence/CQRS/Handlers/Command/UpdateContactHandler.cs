@@ -35,9 +35,9 @@ namespace Contacts.Persistence.CQRS.Handlers.Command
                             Company = updateContactDto.Company
                         });
 
-                    int changedItemCount = await _repository.SaveChanges();
+                    await _repository.SaveChanges();
 
-                    updateContactResponse.IsSuccess = changedItemCount > 0;
+                    updateContactResponse.IsSuccess = result != null;
                 }
             }
             catch (Exception ex)

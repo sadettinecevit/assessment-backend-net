@@ -29,9 +29,9 @@ namespace Contacts.Persistence.CQRS.Handlers.Command
                             UUID = updateInfoTypeDto.UUID,
                             Name = updateInfoTypeDto.Name
                         });
-                    int changedItemCount = await _repository.SaveChanges();
+                    await _repository.SaveChanges();
 
-                    updateInfoTypeResponse.IsSuccess = changedItemCount > 0;
+                    updateInfoTypeResponse.IsSuccess = result != null;
                 }
             }
             catch (Exception ex)

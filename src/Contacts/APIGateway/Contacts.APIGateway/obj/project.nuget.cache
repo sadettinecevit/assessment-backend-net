@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "OWByh70gQpb3GOWELK2NF8PQjiSaQWfjeeS6lrzQAojf2IUt6ctgRzEcdaxIo8V1GAVBJQPZ3XfNIM9oQOze2g==",
+  "dgSpecHash": "XDx0tdDp5++zQEEdz331xNDF4gWtRTY9JU03ITYm5dyOzyLAmrWchklnuQN7k4yIEvsia+SAViBRCuYVxd9qrA==",
   "success": true,
   "projectFilePath": "C:\\Users\\secevit\\source\\repos\\assessment-backend-net\\src\\Contacts\\APIGateway\\Contacts.APIGateway\\Contacts.APIGateway.csproj",
   "expectedPackageFiles": [

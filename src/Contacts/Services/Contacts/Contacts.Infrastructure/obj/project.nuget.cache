@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "tnFNMTBT0o6cNXmy7Ps9JMOnY7T9/21VwdBCtjC9mcfBalXRXb2iU+mcLrKZnMxok17rQKlFpsRouAekAkEbNw==",
+  "dgSpecHash": "4gzrMtkupfvzOQ+pLHHcXiaf68ZfcFWBnpQ/+V40Q4fe7ThayGgOsTCYbZUQPtnZM27w/rLsZuFmm8mf1yPg2Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\secevit\\source\\repos\\assessment-backend-net\\src\\Contacts\\Services\\Contacts\\Contacts.Infrastructure\\Contacts.Infrastructure.csproj",
   "expectedPackageFiles": [

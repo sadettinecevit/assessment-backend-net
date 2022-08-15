@@ -20,23 +20,26 @@ namespace Contacts.Persistence.CQRS.Handlers.Command
             Contact result = null;
             try
             {
-                result = await _repository.Add(
-                    new Contact
-                    {
-                        Name = createContactDto.Name,
-                        Lastname = createContactDto.Lastname,
-                        Company = createContactDto.Company
-                    });
-                int changedItemCount = await _repository.SaveChanges();
-
-                createContactResponse.IsSuccess = changedItemCount > 0;
+                if (createContactDto != null)
+                {
+                    result = await _repository.Add(
+                        new Contact
+                        {
+                            Name = createContactDto.Name,
+                            Lastname = createContactDto.Lastname,
+                            Company = createContactDto.Company
+                        });
+                    await _repository.SaveChanges();
+                    createContactResponse.IsSuccess = result != null;
+                }
             }
             catch (Exception ex)
             {
                 createContactResponse.Message = ex.Message;
+                createContactResponse.Data = null;
             }
 
-            createContactResponse.Message = string.IsNullOrWhiteSpace(createContactResponse.Message) 
+            createContactResponse.Message = string.IsNullOrWhiteSpace(createContactResponse.Message)
                 && createContactResponse.IsSuccess ? "Success" : "Unsuccess";
 
             createContactResponse.Data = new Contact()

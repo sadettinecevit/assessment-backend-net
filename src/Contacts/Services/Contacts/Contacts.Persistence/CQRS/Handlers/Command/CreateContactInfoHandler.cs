@@ -19,28 +19,33 @@ namespace Contacts.Persistence.CQRS.Handlers.Command
 
         public async Task<HandlerResponse<ContactInfo>> Handle(CreateContactInfoDto createContactInfoDto, CancellationToken cancellationToken)
         {
-            HandlerResponse<ContactInfo> createContactInfoResponse = new HandlerResponse<ContactInfo>();
+            HandlerResponse<ContactInfo>? createContactInfoResponse = new HandlerResponse<ContactInfo>();
             ContactInfo result = null;
 
             try
             {
                 //Contact contact = _unitOfWork.ContactRepository.GetByIdAsync(createContactInfoDto.ContactId).Result;
                 //InfoType infoType = _unitOfWork.InfoTypeRepository.GetByIdAsync(createContactInfoDto.InfoTypeId).Result;
-                result = await _repository.Add(
-                    new ContactInfo
-                    {
-                        ContactId = createContactInfoDto.ContactId, //_unitOfWork.ContactRepository.GetByIdAsync(createContactInfoDto.ContactId).Result,
-                        InfoTypeId = createContactInfoDto.InfoTypeId, //_unitOfWork.InfoTypeRepository.GetByIdAsync(createContactInfoDto.InfoTypeId).Result,
-                        Info = createContactInfoDto.Info
-                    });
+                if (createContactInfoDto != null)
+                {
+                    result = await _repository.Add(
+                        new ContactInfo
+                        {
+                            ContactId = createContactInfoDto.ContactId, //_unitOfWork.ContactRepository.GetByIdAsync(createContactInfoDto.ContactId).Result,
+                            InfoTypeId = createContactInfoDto.InfoTypeId, //_unitOfWork.InfoTypeRepository.GetByIdAsync(createContactInfoDto.InfoTypeId).Result,
+                            Info = createContactInfoDto.Info
+                        });
 
-                int changedItemCount = await _repository.SaveChanges();
+                    await _repository.SaveChanges();
 
-                createContactInfoResponse.IsSuccess = changedItemCount > 0;
+                    createContactInfoResponse.IsSuccess = result != null;
+                }
             }
             catch (Exception ex)
             {
                 createContactInfoResponse.Message = ex.Message;
+                createContactInfoResponse = null;
+                throw new ArgumentNullException();
             }
 
             createContactInfoResponse.Message = createContactInfoResponse.IsSuccess ? "Success" : "Unsuccess";

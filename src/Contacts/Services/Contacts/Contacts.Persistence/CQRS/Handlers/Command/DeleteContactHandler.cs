@@ -28,9 +28,9 @@ namespace Contacts.Persistence.CQRS.Handlers.Command
                 if (obj != null)
                 {
                     result = await _repository.Delete(obj);
-                    int changedItemCount = await _repository.SaveChanges();
+                    await _repository.SaveChanges();
 
-                    deleteContactResponse.IsSuccess = changedItemCount > 0;
+                    deleteContactResponse.IsSuccess = result != null;
                 }
             }
             catch (Exception ex)

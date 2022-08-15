@@ -10,3 +10,10 @@ C:\Users\secevit\source\repos\assessment-backend-net\src\Contacts\Services\Repor
 C:\Users\secevit\source\repos\assessment-backend-net\src\Contacts\Services\Report\Report.Infrastructure\obj\Debug\net6.0\refint\Report.Infrastructure.dll
 C:\Users\secevit\source\repos\assessment-backend-net\src\Contacts\Services\Report\Report.Infrastructure\obj\Debug\net6.0\Report.Infrastructure.pdb
 C:\Users\secevit\source\repos\assessment-backend-net\src\Contacts\Services\Report\Report.Infrastructure\obj\Debug\net6.0\ref\Report.Infrastructure.dll
+C:\Users\secevit\source\repos\assessment-backend-net\src\Contacts\Services\Report\Report.Infrastructure\bin\Debug\net6.0\Report.Application.dll
+C:\Users\secevit\source\repos\assessment-backend-net\src\Contacts\Services\Report\Report.Infrastructure\bin\Debug\net6.0\Report.Domain.dll
+C:\Users\secevit\source\repos\assessment-backend-net\src\Contacts\Services\Report\Report.Infrastructure\bin\Debug\net6.0\Report.Persistence.dll
+C:\Users\secevit\source\repos\assessment-backend-net\src\Contacts\Services\Report\Report.Infrastructure\bin\Debug\net6.0\Report.Persistence.pdb
+C:\Users\secevit\source\repos\assessment-backend-net\src\Contacts\Services\Report\Report.Infrastructure\bin\Debug\net6.0\Report.Application.pdb
+C:\Users\secevit\source\repos\assessment-backend-net\src\Contacts\Services\Report\Report.Infrastructure\bin\Debug\net6.0\Report.Domain.pdb
+C:\Users\secevit\source\repos\assessment-backend-net\src\Contacts\Services\Report\Report.Infrastructure\obj\Debug\net6.0\Report.Infrastructure.csproj.CopyComplete

@@ -26,9 +26,9 @@ namespace Contacts.Persistence.CQRS.Handlers.Command
                     {
                         Name = createContactInfoDto.Name
                     });
-                int changedItemCount = await _repository.SaveChanges();
+                await _repository.SaveChanges();
 
-                createInfoTypeResponse.IsSuccess = changedItemCount > 0;
+                createInfoTypeResponse.IsSuccess = result != null;
             }
             catch (Exception ex)
             {

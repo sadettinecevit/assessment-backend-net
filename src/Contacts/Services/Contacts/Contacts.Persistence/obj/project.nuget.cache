@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+WeBzi8/WpH5ImxMmdaTr8r0cKUTt62PnbxARANPnhsG0O3dcgTOEBZ/iTiSrrDzukWhT+KlZSCyd5Cu80nVSQ==",
+  "dgSpecHash": "W+znTB2X1y7waQle1jFwIGDP1iFlwS+Du+FIvAYcNKDoyyg6YzRMxiM17M0x26JmjDNNrD2jy1ox4MluwCvGrw==",
   "success": true,
   "projectFilePath": "C:\\Users\\secevit\\source\\repos\\assessment-backend-net\\src\\Contacts\\Services\\Contacts\\Contacts.Persistence\\Contacts.Persistence.csproj",
   "expectedPackageFiles": [

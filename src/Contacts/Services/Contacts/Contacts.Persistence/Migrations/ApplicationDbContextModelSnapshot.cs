@@ -44,6 +44,29 @@ namespace Contacts.Persistence.Migrations
                     b.HasKey("UUID");
 
                     b.ToTable("Contacts");
+
+                    b.HasData(
+                        new
+                        {
+                            UUID = 1,
+                            Company = "Test",
+                            Lastname = "Ecevit",
+                            Name = "Sadettin"
+                        },
+                        new
+                        {
+                            UUID = 2,
+                            Company = "Test",
+                            Lastname = "Aksu",
+                            Name = "Sezen"
+                        },
+                        new
+                        {
+                            UUID = 3,
+                            Company = "Test",
+                            Lastname = "Senar",
+                            Name = "Müzeyyen"
+                        });
                 });
 
             modelBuilder.Entity("Contacts.Domain.Entities.ContactInfo", b =>
@@ -67,6 +90,43 @@ namespace Contacts.Persistence.Migrations
                     b.HasKey("UUID");
 
                     b.ToTable("ContactInfos");
+
+                    b.HasData(
+                        new
+                        {
+                            UUID = 1,
+                            ContactId = 1,
+                            Info = "05xx xxx xx xx",
+                            InfoTypeId = 1
+                        },
+                        new
+                        {
+                            UUID = 2,
+                            ContactId = 1,
+                            Info = "Amsterdam",
+                            InfoTypeId = 3
+                        },
+                        new
+                        {
+                            UUID = 3,
+                            ContactId = 2,
+                            Info = "05xx xxx xx xx",
+                            InfoTypeId = 1
+                        },
+                        new
+                        {
+                            UUID = 4,
+                            ContactId = 3,
+                            Info = "Amsterdam",
+                            InfoTypeId = 3
+                        },
+                        new
+                        {
+                            UUID = 5,
+                            ContactId = 3,
+                            Info = "05xx xxx xx xx",
+                            InfoTypeId = 3
+                        });
                 });
 
             modelBuilder.Entity("Contacts.Domain.Entities.InfoType", b =>
@@ -84,6 +144,23 @@ namespace Contacts.Persistence.Migrations
                     b.HasKey("UUID");
 
                     b.ToTable("InfoTypes");
+
+                    b.HasData(
+                        new
+                        {
+                            UUID = 1,
+                            Name = "Telefon Numarası"
+                        },
+                        new
+                        {
+                            UUID = 2,
+                            Name = "E-mail Adresi"
+                        },
+                        new
+                        {
+                            UUID = 3,
+                            Name = "Konum"
+                        });
                 });
 #pragma warning restore 612, 618
         }

@@ -31,9 +31,9 @@ namespace Contacts.Persistence.CQRS.Handlers.Command
                             InfoTypeId = updateContactInfoDto.InfoTypeId, //_unitOfWork.InfoTypeRepository.GetByIdAsync(updateContactInfoDto.InfoTypeId).Result,
                             Info = updateContactInfoDto.Info
                         });
-                    int changedItemCount = await _repository.SaveChanges();
+                    await _repository.SaveChanges();
 
-                    updateContactInfoResponse.IsSuccess = changedItemCount > 0;
+                    updateContactInfoResponse.IsSuccess = result != null;
                 }
             }
             catch (Exception ex)

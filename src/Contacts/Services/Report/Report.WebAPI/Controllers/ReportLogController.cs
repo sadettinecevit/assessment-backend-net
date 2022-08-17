@@ -6,7 +6,7 @@ using Report.Domain.Entities;
 namespace Report.WebAPI.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class ReportLogController : ControllerBase
     {
         public IReportLogRepository _repo { get; set; }
@@ -44,8 +44,8 @@ namespace Report.WebAPI.Controllers
             return result;
         }
 
-        [HttpGet("get/{id}")]
-        public async Task<IActionResult> GetById(int id)
+        [HttpGet("getbyid")]
+        public async Task<IActionResult> GetById([FromQuery] int id)
         {
             IActionResult result = null;
 
@@ -92,7 +92,7 @@ namespace Report.WebAPI.Controllers
         }
 
         [HttpPut("update")]
-        public async Task<IActionResult> Update(ReportLogDto request)
+        public async Task<IActionResult> Update([FromQuery] ReportLogDto request)
         {
             IActionResult result = null;
             ReportLog response = null;
@@ -123,8 +123,8 @@ namespace Report.WebAPI.Controllers
             return result;
         }
 
-        [HttpDelete("update/{id}")]
-        public async Task<IActionResult> Delete(int id)
+        [HttpDelete("delete")]
+        public async Task<IActionResult> Delete([FromQuery] int id)
         {
             IActionResult result = null;
             ReportLog response = null;

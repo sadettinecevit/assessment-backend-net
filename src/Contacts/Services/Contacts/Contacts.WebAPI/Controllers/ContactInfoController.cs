@@ -34,7 +34,7 @@ namespace Contacts.WebAPI.Controllers
         }
 
         [HttpPost("create")]
-        public async Task<IActionResult> Add(CreateContactInfoDto request)
+        public async Task<IActionResult> Add([FromQuery] CreateContactInfoDto request)
         {
             IActionResult result;
             HandlerResponse<ContactInfo> response = await _mediator.Send(request);
@@ -52,7 +52,7 @@ namespace Contacts.WebAPI.Controllers
         }
 
         [HttpPut("update")]
-        public async Task<IActionResult> Update(UpdateContactInfoDto request)
+        public async Task<IActionResult> Update([FromQuery] UpdateContactInfoDto request)
         {
             IActionResult result;
             HandlerResponse<ContactInfo> response = await _mediator.Send(request);
@@ -70,7 +70,7 @@ namespace Contacts.WebAPI.Controllers
         }
 
         [HttpDelete("delete")]
-        public async Task<IActionResult> Delete(DeleteContactInfoDto request)
+        public async Task<IActionResult> Delete([FromQuery] DeleteContactInfoDto request)
         {
             IActionResult result;
             HandlerResponse<ContactInfo> response = await _mediator.Send(request);

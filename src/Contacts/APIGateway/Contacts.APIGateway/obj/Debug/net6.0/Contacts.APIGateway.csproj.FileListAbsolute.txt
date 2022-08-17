@@ -33,3 +33,4 @@ C:\Users\secevit\source\repos\assessment-backend-net\src\Contacts\APIGateway\Con
 C:\Users\secevit\source\repos\assessment-backend-net\src\Contacts\APIGateway\Contacts.APIGateway\obj\Debug\net6.0\Contacts.APIGateway.pdb
 C:\Users\secevit\source\repos\assessment-backend-net\src\Contacts\APIGateway\Contacts.APIGateway\obj\Debug\net6.0\Contacts.APIGateway.genruntimeconfig.cache
 C:\Users\secevit\source\repos\assessment-backend-net\src\Contacts\APIGateway\Contacts.APIGateway\obj\Debug\net6.0\ref\Contacts.APIGateway.dll
+C:\Users\secevit\source\repos\assessment-backend-net\src\Contacts\APIGateway\Contacts.APIGateway\bin\Debug\net6.0\ocelot.json

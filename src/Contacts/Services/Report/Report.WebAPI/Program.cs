@@ -1,3 +1,4 @@
+using Report.Infrastructure;
 using Report.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);

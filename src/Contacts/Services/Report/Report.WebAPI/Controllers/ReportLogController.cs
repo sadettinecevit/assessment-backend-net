@@ -2,6 +2,7 @@
 using Report.Application.Dto;
 using Report.Application.Interfaces.Repositories;
 using Report.Domain.Entities;
+using Report.Infrastructure.Services.MessageQueue;
 
 namespace Report.WebAPI.Controllers
 {
@@ -10,9 +11,11 @@ namespace Report.WebAPI.Controllers
     public class ReportLogController : ControllerBase
     {
         public IReportLogRepository _repo { get; set; }
-        public ReportLogController(IReportLogRepository repo)
+        private readonly IRabbitMqService _rabbitMq;
+        public ReportLogController(IReportLogRepository repo, IRabbitMqService rabbitMq)
         {
             _repo = repo;
+            _rabbitMq = rabbitMq;
         }
 
         [HttpGet("get")]
@@ -87,6 +90,8 @@ namespace Report.WebAPI.Controllers
                 CreateTime = response.RequestDate,
                 Status = response.StatusID
             });
+
+            _rabbitMq.Puslish(response);
 
             return result;
         }

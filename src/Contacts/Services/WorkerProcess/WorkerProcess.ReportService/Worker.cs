@@ -2,19 +2,19 @@ namespace WorkerProcess.ReportService
 {
     public class Worker : BackgroundService
     {
-        private readonly ILogger<Worker> _logger;
+        private readonly RabbitMqService _rabbitMqService;
 
-        public Worker(ILogger<Worker> logger)
+        public Worker(RabbitMqService rabbitMqService)
         {
-            _logger = logger;
+            _rabbitMqService = rabbitMqService;
         }
 
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
             while (!stoppingToken.IsCancellationRequested)
             {
-                _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
-                await Task.Delay(1000, stoppingToken);
+                _rabbitMqService.Consume();
+                await Task.Delay(10000, stoppingToken);
             }
         }
     }

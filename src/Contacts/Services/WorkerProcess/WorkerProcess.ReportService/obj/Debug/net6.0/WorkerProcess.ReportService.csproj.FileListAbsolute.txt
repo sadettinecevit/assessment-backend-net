@@ -44,3 +44,4 @@ C:\Users\secevit\source\repos\assessment-backend-net\src\Contacts\Services\Worke
 C:\Users\secevit\source\repos\assessment-backend-net\src\Contacts\Services\WorkerProcess\WorkerProcess.ReportService\obj\Debug\net6.0\WorkerProcess.ReportService.pdb
 C:\Users\secevit\source\repos\assessment-backend-net\src\Contacts\Services\WorkerProcess\WorkerProcess.ReportService\obj\Debug\net6.0\WorkerProcess.ReportService.genruntimeconfig.cache
 C:\Users\secevit\source\repos\assessment-backend-net\src\Contacts\Services\WorkerProcess\WorkerProcess.ReportService\obj\Debug\net6.0\ref\WorkerProcess.ReportService.dll
+C:\Users\secevit\source\repos\assessment-backend-net\src\Contacts\Services\WorkerProcess\WorkerProcess.ReportService\bin\Debug\net6.0\RabbitMQ.Client.dll

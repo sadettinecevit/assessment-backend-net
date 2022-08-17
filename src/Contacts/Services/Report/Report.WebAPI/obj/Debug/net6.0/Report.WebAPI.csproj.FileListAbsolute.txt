@@ -69,3 +69,4 @@ C:\Users\secevit\source\repos\assessment-backend-net\src\Contacts\Services\Repor
 C:\Users\secevit\source\repos\assessment-backend-net\src\Contacts\Services\Report\Report.WebAPI\bin\Debug\net6.0\Report.Domain.pdb
 C:\Users\secevit\source\repos\assessment-backend-net\src\Contacts\Services\Report\Report.WebAPI\bin\Debug\net6.0\Humanizer.dll
 C:\Users\secevit\source\repos\assessment-backend-net\src\Contacts\Services\Report\Report.WebAPI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\secevit\source\repos\assessment-backend-net\src\Contacts\Services\Report\Report.WebAPI\bin\Debug\net6.0\RabbitMQ.Client.dll

@@ -1,7 +1,5 @@
 Merhabalar,
 
-Proje tam anlamıyla istediğim seviyeye ulaşmamıştır. Zaman buldukça geliştirmeye devam edeceğim.
-
 projeler çalıştırılmadan önce database migration işlemleri yapılmalıdır. Migartion yapılırken startup project olarak webapi projesi default projects kısmında ise persistence projeleri seçilmelidir.
 
 Proje çalıştırma sırası:
@@ -16,4 +14,4 @@ contact report üzerinden ise report log ve report log status crud işlemleri ya
 report log create olurken kuyruğa iş ekler.
 bu işin yapılması için workerprocess.reportservice projesinin çalıştırılması gerekmektedir.
 
-proje için testler tamamlanmamıştır. şuan unit testlerin bir kısmı vardır. ilerleyen süreçte tamamlanıp entegarasyon testleride yazılacaktır.
+proje için testler tamamlanmamıştır. şuan unit testlerin bir kısmı vardır. 
